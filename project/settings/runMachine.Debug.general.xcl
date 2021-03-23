@@ -1,0 +1,15 @@
+"D:\iar\arm\bin\armproc.dll" 
+
+"D:\iar\arm\bin\armstlink2.dll" 
+
+"F:\STM32\runMachine\project\Debug\Exe\runMachine.out" 
+
+--plugin="D:\iar\arm\bin\armbat.dll" 
+
+--device_macro="D:\iar\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+--flash_loader="D:\iar\arm\config\flashloader\ST\FlashSTM32F10xx8.board" 
+
+
+
+

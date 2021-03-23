@@ -1,0 +1,6 @@
+main.pbi: F:\STM32\runMachine\project\..\Device\screen.h \
+  F:\STM32\runMachine\project\..\Driver_User\inc\lcd.h \
+  D:\iar\arm\inc\c\DLib_Product.h D:\iar\arm\inc\c\DLib_Config_Normal.h \
+  D:\iar\arm\inc\c\DLib_Defaults.h D:\iar\arm\inc\c\yvals.h \
+  D:\iar\arm\inc\c\ycheck.h D:\iar\arm\inc\c\stdint.h \
+  F:\STM32\runMachine\APP\main.c
