@@ -1,4 +1,4 @@
-//lcd.h 
+//LCD.h 
  
 #ifndef	_LCD_H_ 
 #define _LCD_H_ 
@@ -26,14 +26,14 @@
 #define ADD_INCL_0  (28U)
 #define ADD_INCL_1  (30U)
 
-void GPIO_LcdInit(void);					// lcd gpio��ʼ�� 
-void lcd_init(void);
-void test_line(void);// lcd ģ���ʼ��	 
-void lcd_show_data(unsigned char *puts);// lcd ��ʾ��������ϣ����ʾ��12345678�����ɴ��롰12345678����data�ĳ̶Ȳ���С��8 
-void lcd_clr(void);	
-void delay(uint32_t MS);// lcd �������� 
-void lcd_test(void);						// lcd ���Ժ��� 
+void GPIO_LcdInit(void);					// LCD gpio��ʼ�� 
+void LCD_init(void);
+void test_line(void);// LCD ģ���ʼ��	 
+void LCD_show_data(unsigned char *puts);// LCD ��ʾ��������ϣ����ʾ��12345678�����ɴ��롰12345678����data�ĳ̶Ȳ���С��8 
+void LCD_clr(void);	
+void delay(uint32_t MS);// LCD �������� 
+void LCD_test(void);						// LCD ���Ժ��� 
 
-void lcd_show_data1(unsigned char *puts,uint8_t address)  ;
-void lcd_send_data(unsigned char *data,uint8_t address) ;
+void LCD_show_data1(unsigned char *puts,uint8_t address)  ;
+void LCD_send_data(unsigned char *data,uint8_t address) ;
 #endif

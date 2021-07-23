@@ -6,15 +6,9 @@ void main()
 {
     dataUpdate Data,Data1;
     GPIO_LcdInit();
-    lcd_init();
-    lcd_clr();
-    mainScreen();
-    
-    Data.DataCalo=10.7;
-    Data.DataDistance=2.5;
-    Data.DataSpeed=25.6;
-    Data.DataTime.Second=2400;
-    Data.Incline=9;   
+    LCD_init();
+    LCD_clr();
+    mainScreen(); 
     
     while(1)
     {          
