@@ -8,13 +8,7 @@ void main()
     GPIO_LcdInit();
     lcd_init();
     lcd_clr();
-    mainScreen();
-    
-    Data.DataCalo=10.7;
-    Data.DataDistance=2.5;
-    Data.DataSpeed=25.6;
-    Data.DataTime.Second=2400;
-    Data.Incline=9;   
+    mainScreen(); 
     
     while(1)
     {          
