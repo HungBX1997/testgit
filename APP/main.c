@@ -6,8 +6,8 @@ void main()
 {
     dataUpdate Data,Data1;
     GPIO_LcdInit();
-    lcd_init();
-    lcd_clr();
+    LCD_init();
+    LCD_clr();
     mainScreen(); 
     
     while(1)
