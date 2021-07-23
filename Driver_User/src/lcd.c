@@ -214,7 +214,7 @@ void delay(uint32_t MS)                                         //��ʱ
 * ����:void  
 *  
 */   
-void lcd_init( void )                                               //��ʼ��   
+void LCD_init( void )                                               //��ʼ��   
 {   
     GPIO_ResetBits(GPIOA,HT1621_CS);                                //CS = 0;   
     write_mode(COM);        //����ģʽ   
@@ -260,7 +260,7 @@ void full_ram(unsigned char *puts,unsigned char n)
 */   
    
 
-void lcd_show_data(unsigned char *puts)   
+void LCD_show_data(unsigned char *puts)   
 {   
     unsigned char i ;   
        
@@ -282,7 +282,7 @@ void lcd_show_data(unsigned char *puts)
 * ����:void  
 *  
 */   
-void lcd_delay(int times)   
+void LCD_delay(int times)   
 {   
     int i;   
     for(i=0;i<20*times;i++) ;   
@@ -296,7 +296,7 @@ void lcd_delay(int times)
 *  
 */   
    
-void lcd_clr(void)   
+void LCD_clr(void)   
 {   
     unsigned char i;   
        
@@ -352,7 +352,7 @@ void test_line(void)
 * ����:void  
 *  
 */ 
-void lcd_show_data1(unsigned char *puts,uint8_t address)   
+void LCD_show_data1(unsigned char *puts,uint8_t address)   
 {   
     unsigned char i ;   
        
@@ -368,7 +368,7 @@ void lcd_show_data1(unsigned char *puts,uint8_t address)
     GPIO_SetBits(GPIOA,HT1621_CS);                                  //CS = 1;   
 }
 
-void lcd_send_data(unsigned char *data,uint8_t address)   
+void LCD_send_data(unsigned char *data,uint8_t address)   
 {   
     char i = 0 ;   
     unsigned char show_buf[SIZE_BUFF]='\0';   
@@ -488,6 +488,6 @@ void lcd_send_data(unsigned char *data,uint8_t address)
         }
         i++;       
     }
-    lcd_show_data1(show_buf,address);  
+    LCD_show_data1(show_buf,address);  
 }        
 /***************************************************end file*************************************************/   
