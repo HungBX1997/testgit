@@ -32,6 +32,7 @@ typedef void (*type_UartCallBackInit)(USART_TypeDef*);
 #define UART2_GPIO_CLK       RCC_APB2Periph_GPIOA
 #define UART2_CLK            RCC_APB1Periph_USART2
 
+#define BLUETOOTH_COM        (19)
 /******************************************************************************/
 /*                              FUNCTION                                      */
 /******************************************************************************/
