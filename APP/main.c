@@ -9,7 +9,6 @@ void main()
     LCD_init();
     LCD_clr();
     mainScreen(); 
-    
     while(1)
     {          
         updateData(Data);
