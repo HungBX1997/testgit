@@ -18,6 +18,8 @@ void main()
         delay(20000);
         updateData(Data);
         delay(20000);
+        updateData(Data1);
+        delay(5000);
     }
       
 }
