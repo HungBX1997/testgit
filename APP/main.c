@@ -4,29 +4,29 @@
 
 void main()
 {
-    dataUpdate data,data1;
+    dataUpdate Data,Data1;
     GPIO_LcdInit();
     lcd_init();
     lcd_clr();
     mainScreen();
     
-    data.dataCalo=10.7;
-    data.dataDistance=2.5;
-    data.dataSpeed=25.6;
-    data.dataTime.second=2400;
-    data.incline=9;
+    Data.DataCalo=10.7;
+    Data.DataDistance=2.5;
+    Data.DataSpeed=25.6;
+    Data.DataTime.Second=2400;
+    Data.Incline=9;
     
-    data1.dataCalo=70.1;
-    data1.dataDistance=52.5;
-    data1.dataSpeed=16.9;
-    data1.dataTime.second=3500;
-    data1.incline=14;
+    Data1.DataCalo=70.1;
+    Data1.DataDistance=52.5;
+    Data1.DataSpeed=16.9;
+    Data1.DataTime.Second=3500;
+    Data1.Incline=14;
     
     while(1)
     {          
-        updateData(data);
+        updateData(Data);
         delay(20000);
-        updateData(data1);
+        updateData(Data1);
         delay(20000);
     }
       
